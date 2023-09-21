@@ -1,4 +1,3 @@
-require("dotenv").config();
 const Hapi = require("@hapi/hapi");
 const Inert = require("@hapi/inert");
 const routes = require("./routes");
@@ -10,7 +9,10 @@ const server = Hapi.server({
   port: port,
   host: environment === "development" ? host : null,
   routes: {
-    cors: false,
+    cors: {
+      origin: ["*"], // Allow requests from any source
+      credentials: true, // If you need to pass cookies or headers with credentials
+    },
   },
 });
 
