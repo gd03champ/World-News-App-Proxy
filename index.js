@@ -10,7 +10,7 @@ const server = Hapi.server({
   port: port,
   host: environment === "development" ? host : null,
   routes: {
-    cors: true,
+    cors: false,
   },
 });
 
