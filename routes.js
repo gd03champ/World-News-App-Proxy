@@ -7,7 +7,6 @@ const getNews = {
 
       const result = await fetch(url, {
         method: "GET",
-        headers: { origin: "localhost" },
       });
       const body = await result.json();
       return body;
