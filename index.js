@@ -2,8 +2,8 @@ require("dotenv").config();
 const Hapi = require("@hapi/hapi");
 const Inert = require("@hapi/inert");
 const routes = require("./routes");
-const port = process.env.PORT;
-const host = process.env.APP_DOMAIN;
+const port = 9443;
+const host = "localhost";
 const environment = process.env.NODE_ENV;
 
 const server = Hapi.server({

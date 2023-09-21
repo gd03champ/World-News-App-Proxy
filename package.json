@@ -1,7 +1,7 @@
 {
-  "name": "WorldNewsAppProxy",
+  "name": "NewsBriefProxy",
   "version": "1.0.0",
-  "description": "Proxy requests for WorldNewsApp",
+  "description": "Proxy requests for NewsBrief WebApp",
   "scripts": {
     "start": "nodemon index.js"
   },

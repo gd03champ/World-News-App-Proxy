@@ -21,7 +21,7 @@ const getNews = {
 const getHome = {
   handler: async (request, h) => {
     try {
-      return "Welcome to WorldNewsAppProxy";
+      return "Welcome to NewsBrief web app proxy";
     } catch (error) {
       console.error("Get home:", error);
       return h.response(errorData("Oops something went wrong!")).code(500);
